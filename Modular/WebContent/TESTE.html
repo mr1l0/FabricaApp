@@ -1,0 +1,103 @@
+
+<!-- saved from url=(0057)http://localhost:8080/Modular/cadastro?tabela=atendimento -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Bells</title>
+<link rel="stylesheet" href="./TESTE_files/bootstrap.min.css"><link rel="stylesheet" href="./TESTE_files/bootstrap-theme.min.css">
+<script src="./TESTE_files/bootstrap.min.js"></script>
+<style type="text/css"></style><script src="./TESTE_files/jquery.min.js">
+</script><script type="text/javascript" src="./TESTE_files/jquery.simple-dtpicker.js"></script>
+<link type="text/css" href="./TESTE_files/jquery.simple-dtpicker.css" rel="stylesheet"></head>
+
+  
+    <link href="./css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+
+<!--<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet"> -->
+
+<body>
+
+<button type="button" class="btn btn-default"><a href="./TESTE_files/TESTE.html" style="font-size:15">Cadastro de Atendimentos</a></button>
+<button type="button" class="btn btn-default"><a href="http://localhost:8080/Modular/cadastro?tabela=cliente" style="font-size:15">Cadastro de Clientes</a></button>
+<hr><h3>Cadastro de Atendimentos</h3><hr>
+
+<form method="post" action="http://localhost:8080/Modular/cadastro" class="form-horizontal">
+<div class="form-group">
+<label for="idAtendimento" class="col-sm-2 control-label">Atendimento</label>
+<div class="col-sm-10">
+<input name="idAtendimento" id="idAtendimento" class="form-control" placeholder="Atendimento" type="text">
+</div>
+</div>
+<div class="form-group">
+<label for="Descricao" class="col-sm-2 control-label">Descrição</label>
+<div class="col-sm-10">
+<input name="Descricao" id="Descricao" class="form-control" placeholder="Descrição" type="text">
+</div>
+</div>
+<div class="form-group">
+<label for="cdCliente" class="col-sm-2 control-label">Cliente</label>
+<div class="col-sm-10">
+<input name="cdCliente" id="cdCliente" class="form-control" placeholder="Cliente" type="text">
+</div>
+</div>
+<div class="form-group">
+<label for="DataCadastro" class="col-sm-2 control-label">Data Cadastro</label>
+
+<div class="form-group">
+             
+                <div class="input-group date form_datetime col-md-5" data-date="1979-09-16T05:25:07Z" data-date-format="dd MM yyyy - HH:ii p" data-link-field="dtp_input1">
+                    <input class="form-control" size="16" type="text" value="" readonly>
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+					<span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
+                </div>
+				<input type="hidden" id="dtp_input1" value="" /><br/>
+            </div>
+
+<script type="text/javascript" src="./js/jquery-1.8.3.min.js" charset="UTF-8"></script>
+<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+<script type="text/javascript" src="./js/locales/bootstrap-datetimepicker.fr.js" charset="UTF-8"></script>
+<script type="text/javascript">
+    $('.form_datetime').datetimepicker({
+        //language:  'fr',
+        weekStart: 1,
+        todayBtn:  1,
+		autoclose: 1,
+		todayHighlight: 1,
+		startView: 2,
+		forceParse: 0,
+        showMeridian: 1
+    });
+	$('.form_date').datetimepicker({
+        language:  'fr',
+        weekStart: 1,
+        todayBtn:  1,
+		autoclose: 1,
+		todayHighlight: 1,
+		startView: 2,
+		minView: 2,
+		forceParse: 0
+    });
+	$('.form_time').datetimepicker({
+        language:  'fr',
+        weekStart: 1,
+        todayBtn:  1,
+		autoclose: 1,
+		todayHighlight: 1,
+		startView: 1,
+		minView: 0,
+		maxView: 1,
+		forceParse: 0
+    });
+</script>
+ 
+
+ 
+ 
+ 
+ 
+
+<input type="submit" value="Salvar" class="btn btn-default">
+</form>
+</body>
+</html>

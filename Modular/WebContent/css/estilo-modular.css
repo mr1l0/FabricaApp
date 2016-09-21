@@ -1,0 +1,58 @@
+body{
+	margin-right: 10px;
+	margin-left: 10px;
+}
+a{
+	cursor:pointer;
+}
+.edLookup{
+	padding: 1;
+}
+.divLookup{
+	padding-left: 15;
+}
+.mb0{
+	margin-bottom: 0px;
+}
+.cdLookup{
+	width: 30%;
+}
+.deLookup{
+	width: 50%;
+}
+.btLookup{
+	width 10%;
+}
+.emLinha{
+	display: inline-block;
+}
+input{
+	margin-bottom: 3px;
+	margin-right: 2px;
+}
+
+.seletor{
+    position: absolute;
+    z-index: 100;
+    background-color: white; 
+    width: 100%;    
+}
+
+.cprincipal{
+    z-index: 1; 
+}
+
+.bordaFK{
+    border-width: 2px; /* aqui, cada lado possui uma borda de largura diferente */
+    border-style: dashed dotted; /* estilos de borda diferentes para cima-baixo e esquerda-direita */
+    border-color: black; /* uma cor de borda para cada lado */
+    padding: 20px;
+}
+
+.cdetail{
+	position: absolute;
+    z-index: 50;
+    background-color: white; 
+    width: 100%;
+    
+}
